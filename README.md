@@ -40,7 +40,7 @@ usage:
     test             : à compléter.
 
  - in, out sont des fichiers 
- - si les fichiers ne sont pas spécifiés, l'action est réalisée sur les fluxs stdin, stdout via des pipes
+ - si les fichiers ne sont pas spécifiés, l'action est réalisée sur les flux stdin, stdout via des pipes
  - l'action iv permet d'extraire le bloc IV d'un fichier encodé au format hexa
  - formats
    - key: clé 256 bits - 32 octets binaire, 64 caractères hexa
@@ -48,7 +48,6 @@ usage:
    - les fichiers en provenance de Enedis-pro :
      - contiennent un bloc IV,
      - suivi des données encodées AES/CBC/256.
-     - pour ce que j'en connais, le fichier décompressé est un ZIP 2.0 compatible 7zip.
 ```
 
 ------
