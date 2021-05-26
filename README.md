@@ -1,13 +1,13 @@
 # enedis-pro-cipher
 application de codage-décodage de fichiers issus de ENEDIS-PRO
 
-mots-clés: enedis, enedis-pro, enedis-entreprise, cipher, déchiffrement, AES/CBC-265
+mots-clés: enedis, enedis-pro, enedis-entreprise, cipher, déchiffrement, AES/CBC-256
 
 # présentation
 
 - Cette application est un script ruby qui permet de chiffrer et déchiffrer des fichiers en provenance de ENEDIS Entreprise.
-- ENEDIS fourni par mail, des fichiers de données chiffrés au format AES/CBC-265 dont le format est le suivant :
-  - bloc IV de 256 tiré aléatoirement ; il s'agit d'un perturbateur dans l'algorithme permettant d'amélioré la qualité du chiffrement
+- ENEDIS fourni par mail, des fichiers de données chiffrés au format AES/CBC-256 dont le format est le suivant :
+  - bloc IV de 256 tiré aléatoirement ; il s'agit d'un perturbateur dans l'algorithme permettant d'amélioré la qualité du chiffrement ; IV signifie Intialisation Vector ; on parle aussi de Nonce.
   - suivent ensuite les données chiffrées en AES/CBC-256.
 - pour ce que j'en connais, le fichier extrait est au format ZIP 2.0 et compatible avec 7zip (7z l enedis.zip)
 - le manuel de référence concernant le format d'échange est spécifié dans le document [Enedis-NOI-CF_107E.pdf](https://www.enedis.fr/sites/default/files/Enedis-NOI-CF_107E.pdf)
